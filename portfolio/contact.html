@@ -1,1 +1,88 @@
-<!--This page will contain my contact info a link to send me an email-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hyatt Portfolio</title>
+        <style>
+            body {
+                background-color:rgb(52, 78, 65);
+                color: white;
+            }
+            header{
+                background-color:rgb(163, 177, 138);
+                padding: 5px;
+                text-align: center;
+                color: black; 
+                
+            }
+            nav{
+                background-color: rgb(218, 215, 205);
+                padding: 3px;
+                text-align: center;
+                word-spacing: 30px;
+    
+            }
+            footer{
+                background-color: rgb(218, 215, 205);
+                color: black;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+            .email{
+                a:link, a:visited {
+                    color: white;
+                    text-align: center;
+                    text-decoration: underline;
+                    display: inline-block;}
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="color: while;">Abby Hyatt</h1>
+        </header>
+        <main>
+            <nav>
+                <b>
+                    <a href="index.html">Home</a>
+                    
+                    <a href="about.html">AboutMe</a>
+                    
+                    <a href="coursework.html">CourseWork</a>
+
+                    <a href="contact.html">Contact</a>
+                    
+                </b>
+            </nav>
+            <div class="email">
+                <p>To contact me via email on a matter related to HPU: <a href="mailto:ahyatt@highpoint.edu">ahyatt@highpoint.edu</a><br>
+                To contact me via email on a personal matter: <a href="mailto:abigail.hyatt23@gmail.com">abigail.hyatt23@gmail.com</a></p>
+            </div>
+        </main>
+        <footer>
+            <table id="colorTable" style="width:25%; border: 1px solid black;">
+                <td style="background-color:rgb(218, 215, 205);">&nbsp;</td>
+                <td style="background-color: rgb(163, 177, 138);">&nbsp;</td>
+                <td style="background-color: rgb(88, 129, 87);">&nbsp;</td>
+                <td style="background-color: rgb(58, 90, 64);">&nbsp;</td>
+                <td style="background-color: rgb(52, 78, 65);">&nbsp;</td>
+
+            </table>
+            <div style="text-align: right;">
+                <button type="button" 
+                    onclick="document.getElementById('demo').innerHTML = Date()">
+                    Click me to display Date and Time.
+                </button>
+            </div>
+            <button type="button" 
+                onclick="document.getElementById('colorTable').style.visibility = 
+                document.getElementById('colorTable').style.visibility === 'collapse' ? 'visible' : 'collapse';">
+                Show/Hide Table
+            </button>
+            
+             <p id="demo"></p>
+        </footer>
+    </body>
+</html>
