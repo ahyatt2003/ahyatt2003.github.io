@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kathy's Clean Sweep</title>
+        <style>
+             nav{
+                border: 5px solid black;
+                padding: 10px;
+                text-align: center;
+                background-color: rgb(107, 118, 118);
+                }
+             a{
+                text-decoration: underline;
+                color:white;
+                padding: 30px;
+                }
+             .mainText{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                font-size: 30px;
+                margin-left: 3px;
+             }
+             #logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30%;
+             }
+             footer{
+                background-color: rgb(107, 118, 118);
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                border: 3px solid black; 
+                
+             }
+             .left-photo{
+                background-color:rgb(239, 128, 108);
+                display: flex;
+            }
+            .right-photo{
+                background-color:white;
+                color:black;
+                display: flex;
+            }
+            .description {
+                flex: 1;
+                
+            }
+            .columns {
+                display:flex;
+                
+                gap: 10px;
+            }
+            .redColumns{
+                display:flex;
+            
+                background-color: rgb(239, 128, 108);
+                width:100%; 
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="background-color: rgb(107, 118, 118);border: 5px solid black; border-bottom-style:none;">
+                <img id="logo" src="KCS Logo.png" alt="Logo"> 
+            </div>
+        </header>
+        <main>
+            <nav>
+                <b>
+                    <a href="index.html">Home</a>
+                    <a href="KCSFamily.html">KCS Family</a> 
+                    <a href="contact.html">Contact Us</a>
+                    <a href="emplyeeapp.html">Employment</a>
+                </b>
+            </nav>
+            <div class="left-photo">
+                <img src="TeamPhoto.png" alt="Picture of the Team" style="width: 250px;">
+                <div class="description">
+                    <h1 style="margin-left:15px;">Mother Daughter Team</h1>
+                    <p class="mainText" style="margin-left:15px;">Here at Kathy's clean sweep (KCS) you can rest assured that your space will be taken care of like it is our own. KCS was born from a dream adn has flourished into the buisness we are today. We were established in 2006. Since then we have been providing excellent residential and commercial cleaning services to our community. We sre the dream team, mother and daughter working hard to ensure your space is cleaned up to our standards. We hve worked hard over the years to build more than a business but a family. If you're ever in town please stop by! We love to interact with our customers and fellow community members.</p>
+                </div>
+            </div>
+                
+            <div class="right-photos">
+                <img src="paradePhot.jpg" alt="Picture of whole family at local parade." style="width:400px; float:right;">
+                <div class="description">
+                    <h1>We love our community!</h1>
+                    <p class="mainText">At the heart of our business model has always been serving our community. Not only is this where we work but also the community that we live in. Our business could not be what it is today without the power of community and word of mouth. We aspire to not be an idle buisness but an involved one. Often you can find us and our family participating in various community events like christmas parades and halloween festivals. </p>
+                </div>
+            </div>
+            <h1 style="text-align: center; background-color: rgb(239, 128, 108);color:black; text-decoration: underline;margin-bottom:0; padding: 5px;border-bottom: 3px solid black">But don't take our word for it...</h1>
+            <div class="columns">
+                <div class="redColumns">
+                    <p class="mainText" stlye="text-align: center;">We are very pleased with KCS. The cleaners are very dependable & any time we have needed to make other arrangements to change our cleaning schedule, they have been vey accommodating. <br><i>-Faith Lutheran Church</i></p>
+                </div>
+                <div class="redColumns mainText" style="background-color:rgb(107, 118, 118);">
+                    <p style="text-align: center;">KCS has been our cleaning service since 2015. We've been very satisfied with our service. They also keep cleaning & restroom supplies stocked. Kathy always takes very good care of our company's needs. <br><i>-Adhezion Biomedical</i></p>
+                </div>
+                <div class="redColumns mainText">
+                    <p style="text-align: center;">KCS has cleaned our home since 2009 following a remodel. We were so impressed with their work, we asked Kathy to clean regularly. They are very thorough, professional, punctual, & trustworthy. <br><i>-Corrine & Allen Barwick</i></p>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <p style="color: white; float: right; margin-right: 30pt;">Contact Us! (828) 443-4550 
+                <a href="mailto:kathyscleansweep@gmail.com">Send Email</a>
+            </p>
+            <table id="colorTable" style="width:25%; border: 1px solid black;">
+                <td style="background-color:rgb(0, 0, 0);">&nbsp;</td>
+                <td style="background-color:rgb(107, 118, 118);">&nbsp;</td>
+                <td style="background-color: rgb(194, 10, 35);">&nbsp;</td>
+                <td style="background-color: rgb(239, 128, 108);">&nbsp;</td>
+                <td style="background-color: rgb(255, 255, 255);">&nbsp;</td>
+            </table>
+            <button type="button" 
+                onclick="document.getElementById('colorTable').style.visibility = 
+                document.getElementById('colorTable').style.visibility === 'collapse' ? 'visible' : 'collapse';">
+                Show/Hide Table
+            </button>
+            <br>
+            <p style="color:white; margin-right: 20pt; display: inline;"><small><i>Copyright KCS 2006</i></small></p>
+            <div style="text-align:center;color:white;display:inline;margin-left: 350pt;">
+                <button type="button" 
+                    onclick="document.getElementById('demo').innerHTML = Date()">
+                    Click me to display Date and Time.
+                </button>
+                <p id="demo"></p>
+            </div>
+        </footer>
+    </body>
 
+
+
+
+</html>
