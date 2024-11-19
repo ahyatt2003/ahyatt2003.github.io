@@ -9,7 +9,7 @@
                 padding: 10px;
                 text-align: center;
                 background-color: rgb(107, 118, 118);
-                position: sticky;  /* Check back later to make sure sticky nav bar is working */
+                position: sticky; 
                 top: 0;
                 }
              a{
@@ -29,6 +29,20 @@
                 bottom: 0;
                 width: 100%;
              }
+             .photo-container{
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-wrap: wrap; 
+                gap: 100px
+                
+             }
+             #about{
+                background-color: rgb(239, 128, 108);
+                text-align: center;
+                
+             }
         </style>
     </head>
     <body>
@@ -47,6 +61,28 @@
 
                 </b>
             </nav>
+            <div class="photo-container">
+                <img src="Buliding Photo.png" alt="Photo of front of business office." style="height: 500px;">
+                <img src="cleanclean.png" alt="So fresh and so clean clean." style="height:500px;">
+            </div>
+            <div id="about">
+            <h2 style="font-size: 30px; text-decoration: underline;">KATHY'S CLEAN SWEEP</h2>
+            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                font-size: 24px; margin: 10px;">We are a commercial and residential cleaning business that offers our services to the greater areas of: Rutherford College, Morganton, Lenior, Ahseville, and Boone. We promise quality, reliable cleaning service every time so our loyal customers feel special. We work hard to be the best. Our products are high-quality and safe. And we focus on the details so you have a clean, orderly office every time. We customize our services to meet your specific needs. Ask us about daily, weekly and bi-weekly service. Contracts welcome. Call for a free quote!</p>
+            </div>
+            <div class="photo-container"> <!-- Need to finish this side by side section by formatting the list and adding a picture of a map!-->
+                <div>
+                    <img src="Buliding Photo.png" alt="Photo of front of business office." style="height: 500px;">
+                </div>
+                <div> 
+                    <h3> Hours:</h3>
+                    <ul> 
+                        <li> Monday-Friday: 9:00am-5:00pm</li>
+                        <li> Saturday: 9:00am-1:00pm</li>
+                        <li> Sunday: CLOSED</li>
+                    </ul>
+                </div>
+            </div>
         </main>
         <footer>
             <p style="color: white; float: right; margin-right: 30pt;">Contact Us! (828) 443-4550 
