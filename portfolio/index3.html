@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyatt Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: rgb(88,129,87);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: Left; 
+        }
+        
+        
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .photo-container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(88,129,87);
+            color: white;
+            bottom: 0;
+            width: 100%;
+        }
+        .quoteSection{
+            background-color: rgba(163, 177, 138);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border: 2px solid rgb(88,129,87);
+            font-style: italic;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="index3.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Hello! My name is Abby Hyatt. I am a current senior at High Point University in North Carolina. I will graduate in May 2025 with a Bachlors of Science in Mathematics. 
+            I have aquired many skills over my four years at HPU such as coding experience in <strong>MATLAB, LaTeX, Python, C++, and HTML </strong>.</p>
+        <div class="photo-container">
+            <img src="headshot.png" alt="A photo of me" >
+            <img src="hpu.png" alt="High Point Univeristy logo">
+        </div>
+        <br>
+        <p>Please explore this page, there is background infromation about my hometown and links to see recent projects that I have completed throughout my mathematical courses.  </p>
+    </div>
+    <div class="container quoteSection">
+        "If I have seen further than others, it is by standing upon the shoulders of giants." -Sir Isaac Newton
+    </div>
+    <footer>
+        &copy; 2024 Abby Hyatt. All rights reserved.
+        <table id="colorTable" style="width:25%; border: 1px solid black;">
+            <td style="background-color:rgb(218, 215, 205);">&nbsp;</td>
+            <td style="background-color: rgb(163, 177, 138);">&nbsp;</td>
+            <td style="background-color: rgb(88, 129, 87);">&nbsp;</td>
+            <td style="background-color: rgb(58, 90, 64);">&nbsp;</td>
+            <td style="background-color: rgb(52, 78, 65);">&nbsp;</td>
+
+        </table>
+        
+    </footer>
+</body>
+</html>
