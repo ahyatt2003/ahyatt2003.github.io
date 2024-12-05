@@ -1,78 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Hyatt Portfolio</title>
-        <style>
-            body {
-                background-color:rgb(52, 78, 65);
-                color: white;
-            }
-            header{
-                background-color:rgb(163, 177, 138);
-                padding: 5px;
-                text-align: center;
-                color: black; 
-                
-            }
-            nav{
-                background-color: rgb(218, 215, 205);
-                padding: 3px;
-                text-align: center;
-                word-spacing: 30px;
-    
-            }
-            footer{
-                background-color: rgb(218, 215, 205);
-                color: black;
-                position: relative;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1 style="color: while;">Abby Hyatt</h1>
-        </header>
-        <main>
-            <nav>
-                <b>
-                    <a href="index.html">Home</a>
-                    
-                    <a href="about.html">AboutMe</a>
-                    
-                    <a href="coursework.html">CourseWork</a>
-
-                    <a href="contact.html">Contact</a>
-                    
-                </b>
-            </nav>
-        
-        </main>
-        <footer>
-            <table id="colorTable" style="width:25%; border: 1px solid black;">
-                <td style="background-color:rgb(218, 215, 205);">&nbsp;</td>
-                <td style="background-color: rgb(163, 177, 138);">&nbsp;</td>
-                <td style="background-color: rgb(88, 129, 87);">&nbsp;</td>
-                <td style="background-color: rgb(58, 90, 64);">&nbsp;</td>
-                <td style="background-color: rgb(52, 78, 65);">&nbsp;</td>
-
-            </table>
-            <div style="text-align: right;">
-                <button type="button" 
-                    onclick="document.getElementById('demo').innerHTML = Date()">
-                    Click me to display Date and Time.
-                </button>
-            </div>
-            <button type="button" 
-                onclick="document.getElementById('colorTable').style.visibility = 
-                document.getElementById('colorTable').style.visibility === 'collapse' ? 'visible' : 'collapse';">
-                Show/Hide Table
-            </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color:rgb(88,129,87);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #444;
+        }
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .photo-container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(88,129,87);
+            color: white;
+           
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="index3.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
             
-             <p id="demo"></p>
-        </footer>
-    </body>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Hello!</h2>
+        <div class="photo-container">
+            <img src="highschool.jpg" alt="Your Profile Photo">
+            <img src="award.JPG" alt="An Additional Image">
+        </div>
+        <p>
+            My name is Abby Hyatt, and I am passionate about mathematics and computer science. I am currently a senior in college, pursuing a degree in mathematics with a focus on theoretical and pure math. In my free time, I enjoy coding, exploring new technologies, and solving challenging problems. Upon graduation from my undergraduate program I will begin my journey working towards a PhD in Mathmatics. My longterm career goal is to become a college professor. 
+        </p>
+        <p>
+            Over the past few years, I have honed my skills in HTML, CSS, and JavaScript, and I'm excited to continue expanding my knowledge. Outside of academics, I enjoy being active in student organizations and leadership roles, which have helped me grow both personally and professionally. These roles include chapter president of Alpha Lambda Delta honor society and Captian Ambassador within the university Admissions office. 
+        </p>
+        <p>
+           My hometown is Valdese, North Carolina where I graduated from East Burke High School in 2021. I am a family oriented and always see myself living in the geological area surroudning North Carolina. Feel free to explore my projects and get in touch with me through the contact page or by the info listed below. I look forward to connecting with you!
+        </p>
+        <p>
+            My contact info is as follows: 
+            <ul>
+                <li> Email: abigial.hyat23@gmail.com</li>
+                <li> Phone: (828) 390-4621 </li>
+            </ul>
+        </p>
+    </div>
+
+
+    <footer>
+        &copy; 2024 Abby Hyatt. All rights reserved.
+        <table id="colorTable" style="width:25%; border: 1px solid black;">
+            <td style="background-color:rgb(218, 215, 205);">&nbsp;</td>
+            <td style="background-color: rgb(163, 177, 138);">&nbsp;</td>
+            <td style="background-color: rgb(88, 129, 87);">&nbsp;</td>
+            <td style="background-color: rgb(58, 90, 64);">&nbsp;</td>
+            <td style="background-color: rgb(52, 78, 65);">&nbsp;</td>
+
+        </table>
+        
+    </footer>
+</body>
 </html>
