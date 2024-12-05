@@ -1,88 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Hyatt Portfolio</title>
-        <style>
-            body {
-                background-color:rgb(52, 78, 65);
-                color: white;
-            }
-            header{
-                background-color:rgb(163, 177, 138);
-                padding: 5px;
-                text-align: center;
-                color: black; 
-                
-            }
-            nav{
-                background-color: rgb(218, 215, 205);
-                padding: 3px;
-                text-align: center;
-                word-spacing: 30px;
-    
-            }
-            footer{
-                background-color: rgb(218, 215, 205);
-                color: black;
-                position: relative;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-            }
-            .email{
-                a:link, a:visited {
-                    color: white;
-                    text-align: center;
-                    text-decoration: underline;
-                    display: inline-block;}
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1 style="color: while;">Abby Hyatt</h1>
-        </header>
-        <main>
-            <nav>
-                <b>
-                    <a href="index.html">Home</a>
-                    
-                    <a href="about.html">AboutMe</a>
-                    
-                    <a href="coursework.html">CourseWork</a>
-
-                    <a href="contact.html">Contact</a>
-                    
-                </b>
-            </nav>
-            <div class="email">
-                <p>To contact me via email on a matter related to HPU: <a href="mailto:ahyatt@highpoint.edu">ahyatt@highpoint.edu</a><br>
-                To contact me via email on a personal matter: <a href="mailto:abigail.hyatt23@gmail.com">abigail.hyatt23@gmail.com</a></p>
-            </div>
-        </main>
-        <footer>
-            <table id="colorTable" style="width:25%; border: 1px solid black;">
-                <td style="background-color:rgb(218, 215, 205);">&nbsp;</td>
-                <td style="background-color: rgb(163, 177, 138);">&nbsp;</td>
-                <td style="background-color: rgb(88, 129, 87);">&nbsp;</td>
-                <td style="background-color: rgb(58, 90, 64);">&nbsp;</td>
-                <td style="background-color: rgb(52, 78, 65);">&nbsp;</td>
-
-            </table>
-            <div style="text-align: right;">
-                <button type="button" 
-                    onclick="document.getElementById('demo').innerHTML = Date()">
-                    Click me to display Date and Time.
-                </button>
-            </div>
-            <button type="button" 
-                onclick="document.getElementById('colorTable').style.visibility = 
-                document.getElementById('colorTable').style.visibility === 'collapse' ? 'visible' : 'collapse';">
-                Show/Hide Table
-            </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgb(88,129,87);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #444;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             
-             <p id="demo"></p>
-        </footer>
-    </body>
+        }
+        form label {
+            text-align: left;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: rgb(58, 90, 64);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button:hover {
+            background-color: rgb(163, 177, 138);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(88,129,87);
+            color: white;
+           
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="index3.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Please provide any relevant information to your contact request" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Abby Hyatt. All rights reserved.
+        <table id="colorTable" style="width:25%; border: 1px solid black;">
+            <td style="background-color:rgb(218, 215, 205);">&nbsp;</td>
+            <td style="background-color: rgb(163, 177, 138);">&nbsp;</td>
+            <td style="background-color: rgb(88, 129, 87);">&nbsp;</td>
+            <td style="background-color: rgb(58, 90, 64);">&nbsp;</td>
+            <td style="background-color: rgb(52, 78, 65);">&nbsp;</td>
+
+        </table>
+        
+    </footer>
+</body>
 </html>
