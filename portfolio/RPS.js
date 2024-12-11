@@ -1,6 +1,7 @@
-const choices = ["rock", "paper", "scissors"];
+
 
 function getComputerChoice() {
+  const choices = ["rock", "paper", "scissors"];
   const randomIndex = Math.floor(Math.random() * 3);
   return choices[randomIndex];
 }
@@ -21,13 +22,25 @@ function determineWinner(userChoice, computerChoice) {
   }
 }
 
+// Function to play a round
 function playRound(userChoice) {
   const computerChoice = getComputerChoice();
+  userChoice=userChoice.toLowerCase();
   const result = determineWinner(userChoice, computerChoice);
+    
+  //Display what user chose 
+  document.getElementById("userChoice").textContent=userChoice;
 
-  document.getElementById("result").textContent = `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
-}
+  //Display what the computer chose 
+  document.getElementById("computerChoice").textContent=computerChoice;
 
-document.getElementById("rock").addEventListener("click", () => playRound("rock"));
-document.getElementById("paper").addEventListener("click", () => playRound("paper"));
-document.getElementById("scissors").addEventListener("click", () => playRound("scissors"));
+  //Display the winner 
+  document.getElementById("result").textContent=result;
+
+  console.log(`You chose ${userChoice}, computer chose ${computerChoice}.`);
+  console.log(result);}
+  
+  // Example usage
+  playRound("rock"); 
+  playRound("PAPER"); 
+  playRound("ScIssOrS"); 
